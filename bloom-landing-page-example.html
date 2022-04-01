@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html class="wf-sofiapro-n3-active wf-sofiapro-n4-active wf-active wf-fontawesome-n4-active skrollr skrollr-desktop"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="vGvEIsdIHYFpEA0EBqUOb5jMXn3ilP4IqZ6NYUTr">
+        <meta http-equiv="x-pjax-version" content="/build/css/app-cb4ba07b03.css">
+        <title>Bloom Diagnostics - Smart Blood Tests</title>
+        <meta name="description" content="Smart systems that combine laboratory technology with personalized analysis.">
+        <meta property="og:url" content="https://bloomdiagnostics.com">
+        <meta property="og:title" content="Bloom Diagnostics - Smart Blood Tests">
+        <meta property="og:description" content="Smart systems that combine laboratory technology with personalized analysis.">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.bloomdiagnostics.com/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.bloomdiagnostics.com/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://www.bloomdiagnostics.com/favicon-16x16.png">
+        <link rel="manifest" href="https://www.bloomdiagnostics.com/site.webmanifest">
+        <link rel="mask-icon" href="https://www.bloomdiagnostics.com/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="stylesheet" href="bloom-diagnostics-example-files/app-cb4ba07b03.css"><style type="text/css">@font-face{font-family:tk-sofia-pro-n3;src:url(https://use.typekit.net/af/07553a/0000000000000000000157ad/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/07553a/0000000000000000000157ad/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/07553a/0000000000000000000157ad/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-sofia-pro-n4;src:url(https://use.typekit.net/af/c07bfb/0000000000000000000157b1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/c07bfb/0000000000000000000157b1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/c07bfb/0000000000000000000157b1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style><link rel="stylesheet" href="bloom-diagnostics-example-files/3d1561dd78.css" media="all"><style type="text/css">@font-face{font-family:sofia-pro;src:url(https://use.typekit.net/af/07553a/0000000000000000000157ad/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/07553a/0000000000000000000157ad/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/07553a/0000000000000000000157ad/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:sofia-pro;src:url(https://use.typekit.net/af/c07bfb/0000000000000000000157b1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/c07bfb/0000000000000000000157b1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/c07bfb/0000000000000000000157b1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style>
+    <style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+
+    <body class="body homepage firefox macosx pageIn" style="height: 5691px;">
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav id="navBar" class="navBar commonNav">
+            <span class="navBar__bar">
+                <a href="https://www.bloomdiagnostics.com/" class="logo-mobile" style="opacity: 1;"><svg style="padding-top: 10px;"width="70" height="70" class="transform scale-75" xmlns="http://www.w3.org/2000/svg"><g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="nonzero">
+                    <path class="inner-circle" d="M63 35a28 28 0 10-56 0 28 28 0 0056 0zm-6-.5a21.5 21.5 0 11-43 0 21.5 21.5 0 0143 0z" fill="#CCC"></path><path class="outer-circle" d="M70 35a35 35 0 10-70 0 35 35 0 0070 0zm-7 0a28 28 0 11-56 0 28 28 0 0156 0z" fill="#9D9D9D"></path></g></svg></a>
+
+                <ul class="nav">
+                                            <li class="nav__item" id="home"><a href="#" class="nav__item__link">How it works</a></li>
+                        <li class="nav__item" id="features"><a href="#" class="nav__item__link">Tests</a></li>
+                        <li class="nav__item" id="models"><a href="#" class="nav__item__link">Try it</a></li>
+                                        <li class="nav__item">
+                        <span class="nav__item__link currencySelector euro" data-currency="Euro" data-symbol="€">
+                            English
+                            <svg class="caret" version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="7px" viewBox="0 0 11 7" enable-background="new 0 0 11 7" xml:space="preserve">
+                            <path fill="#FFFDFD" d="M5.501,4.208L1.964,0.671C1.579,0.286,0.942,0.282,0.552,0.673C0.158,1.066,0.16,1.695,0.549,2.085
+                                l4.247,4.247c0.192,0.192,0.447,0.288,0.703,0.29c0.259,0.002,0.513-0.096,0.708-0.291l4.246-4.246
+                                c0.385-0.385,0.389-1.021-0.002-1.412c-0.394-0.394-1.023-0.392-1.412-0.002L5.501,4.208z"></path>                        </svg></span>
+                        <ul class="currencySelector__currencies">
+                                                            <li class="currency" data-currency="ARS Peso" data-symbol="$">German</li>
+                                                    </ul>
+                    </li>
+                    <li class="nav__item" id="features"><a href="#" class="nav__item__link">About</a></li>
+                    <li class="nav__item" id="features"><a href="#" class="nav__item__link">Become a Partner</a></li>
+                    <li class="nav__item" id="features"><a href="#" class="nav__item__link">Contact</a></li>
+                    <li class="nav__item">
+                        <span class="nav__item__link cartLauncher">
+                            Cart ( <span class="nav__count">0</span> )
+                            <svg class="cart-s" version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="14px" viewBox="0 0 18 14" enable-background="new 0 0 18 14" xml:space="preserve">
+                            <path fill="#FDFDFD" d="M15.754,9.996H5.251L3.282,2H1C0.448,2,0,1.552,0,1s0.448-1,1-1h3.85l1.969,7.996h7.498l1.771-5.257
+                                c0.177-0.522,0.739-0.804,1.267-0.628c0.523,0.176,0.805,0.744,0.628,1.267L15.754,9.996z M5,12.5C5,13.328,5.671,14,6.5,14
+                                S8,13.328,8,12.5S7.329,11,6.5,11S5,11.672,5,12.5z M13,12.5c0,0.828,0.672,1.5,1.5,1.5s1.5-0.672,1.5-1.5S15.328,11,14.5,11
+                                S13,11.672,13,12.5z"></path>
+                                </svg>                        
+                        </span>
+                    </li>
+                    
+                </ul>
+
+                <div class="hamburgerIcon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </span>
+        </nav>
+
+        <div class="navBar__mobile commonNav">
+            <ul class="menu__list">
+                                    <li class="heading-l menu__item" id="homeMobile"><a href="https://bloomdiagnostics/" class="nav__item__link">Home</a></li>
+                    <li class="heading-l menu__item" id="featuresMobile"><a href="https://bloomdiagnostics/" class="nav__item__link">Features</a></li>
+                    <li class="heading-l menu__item" id="modelsMobile"><a href="https://bloomdiagnostics/" class="nav__item__link">Products</a></li>
+                                <li class="heading-l menu__item separator">–</li>
+                
+                <li class="heading-l menu__item">
+                    <span class="nav__item__link cartLauncher">
+                        Cart ( <span class="nav__count">0</span> )
+                        <svg class="cart-s" version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="14px" viewBox="0 0 18 14" enable-background="new 0 0 18 14" xml:space="preserve">
+                            <path fill="#FDFDFD" d="M15.754,9.996H5.251L3.282,2H1C0.448,2,0,1.552,0,1s0.448-1,1-1h3.85l1.969,7.996h7.498l1.771-5.257
+                                c0.177-0.522,0.739-0.804,1.267-0.628c0.523,0.176,0.805,0.744,0.628,1.267L15.754,9.996z M5,12.5C5,13.328,5.671,14,6.5,14
+                                S8,13.328,8,12.5S7.329,11,6.5,11S5,11.672,5,12.5z M13,12.5c0,0.828,0.672,1.5,1.5,1.5s1.5-0.672,1.5-1.5S15.328,11,14.5,11
+                                S13,11.672,13,12.5z"></path>
+                                </svg>                    
+                    </span>
+                </li>
+                <li class="heading-l menu__item">
+                    <span class="nav__item__link currencySelector euro" data-currency="Euro" data-symbol="€">
+                        Euro €
+                        <svg class="caret" version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="7px" viewBox="0 0 11 7" enable-background="new 0 0 11 7" xml:space="preserve">
+                            <path fill="#FFFDFD" d="M5.501,4.208L1.964,0.671C1.579,0.286,0.942,0.282,0.552,0.673C0.158,1.066,0.16,1.695,0.549,2.085
+                                l4.247,4.247c0.192,0.192,0.447,0.288,0.703,0.29c0.259,0.002,0.513-0.096,0.708-0.291l4.246-4.246
+                                c0.385-0.385,0.389-1.021-0.002-1.412c-0.394-0.394-1.023-0.392-1.412-0.002L5.501,4.208z"></path>                    </svg></span>
+                    <ul class="currencySelector__currencies">
+                                                    <li class="currency" data-currency="ARS Peso" data-symbol="$">ARS Peso $</li>
+                                            </ul>
+                </li>
+            </ul>
+        </div>
+    <div class="cartPreview">
+    <div class="cartPreview__header">
+        <div class="cartPreview__controls">
+            <span class="text-s">Items added to cart</span>
+            <img class="cartPreview__close" src="bloom-diagnostics-example-files/cross-l.svg" alt="Close">
+        </div>
+        <div class="itemsColumns clearfix">
+            <div class="itemsColumns__left">Item</div>
+            <div class="itemsColumns__right">Subtotal</div>
+        </div>
+    </div>
+    <div class="cartPreview__items">
+
+        <div class="itemsColumns clearfix">
+    <div class="itemsColumns__left">Subtotal</div>
+    <div class="itemsColumns__right">€0.00</div>
+</div>
+
+<a class="btn btn-orange--xs goToCheckOut   disabled ">
+    <span class="btn__text"> Your cart is empty </span>
+    <svg class="btn__icon btn__icon--cart" version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="14px" viewBox="0 0 18 14" enable-background="new 0 0 18 14" xml:space="preserve">
+                <path fill="#FDFDFD" d="M15.754,9.996H5.251L3.282,2H1C0.448,2,0,1.552,0,1s0.448-1,1-1h3.85l1.969,7.996h7.498l1.771-5.257
+                    c0.177-0.522,0.739-0.804,1.267-0.628c0.523,0.176,0.805,0.744,0.628,1.267L15.754,9.996z M5,12.5C5,13.328,5.671,14,6.5,14
+                    S8,13.328,8,12.5S7.329,11,6.5,11S5,11.672,5,12.5z M13,12.5c0,0.828,0.672,1.5,1.5,1.5s1.5-0.672,1.5-1.5S15.328,11,14.5,11
+                    S13,11.672,13,12.5z"></path>
+            </svg></a>
+
+
+    </div>
+</div>
+    <div class="modalOverlay modalLogin">
+    <div class="modalOverlay__close"></div>
+    <div class="loginDialog singleColumn">
+        <div class="loginDialog__container">
+            <div class="login__header">
+                <img src="bloom-diagnostics-example-files/login-user.svg" alt="User">
+                <h3 class="heading-xs">Sign in</h3>
+            </div>
+
+            <form class="login__form" role="form" method="POST" id="loginForm" action="https://bloomdiagnostics/login">
+                <input type="hidden" name="_token" value="vGvEIsdIHYFpEA0EBqUOb5jMXn3ilP4IqZ6NYUTr">
+                <div class="formGroup">
+                    <input type="email" class="text input--full input--onWhite" id="email" name="email" placeholder="Email *">
+                </div>
+                <div class="formErrorMessage emailError"></div>
+
+                <div class="formGroup">
+                    <input type="password" class="text input--full input--onWhite" id="password" name="password" placeholder="Password *">
+                </div>
+                <div class="formErrorMessage passwordError"></div>
+
+                <button type="submit" class="btn input--full btn-orange--xs">
+                    <span class="btn__text">Sign in</span>
+                </button>
+            </form>
+
+            <div class="login__help">
+                <p class="mb-20"><a href="https://bloomdiagnostics/password/reset" target="_tab">Forgot your password?</a></p>
+                <p class="registerModalLink">Not a registered user? <a href="https://bloomdiagnostics/" target="_tab">Sign up here</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modalOverlay modalRegisterLogin">
+    <div class="modalOverlay__close"></div>
+    <div class="loginDialog">
+        <div class="loginDialog__container">
+            <div class="login__header">
+                <img src="bloom-diagnostics-example-files/login-user.svg" alt="User">
+                <h3 class="heading-xs">Sign in</h3>
+            </div>
+
+            <form class="login__form" role="form" method="POST" id="loginFormCheckout" action="https://bloomdiagnostics/login">
+                <input type="hidden" name="_token" value="vGvEIsdIHYFpEA0EBqUOb5jMXn3ilP4IqZ6NYUTr">
+                <div class="formGroup">
+                    <input type="email" class="text input--full input--onWhite" id="email" name="email" placeholder="Email *">
+                </div>
+                <div class="formErrorMessage emailError"></div>
+
+                <div class="formGroup">
+                    <input type="password" class="text input--full input--onWhite" id="password" name="password" placeholder="Password *">
+                </div>
+                <div class="formErrorMessage passwordError"></div>
+
+                <button type="submit" class="btn input--full btn-orange--xs">
+                    <span class="btn__text">Sign in</span>
+                </button>
+            </form>
+
+            <div class="login__help">
+                <p class="mb-20"><a href="https://bloomdiagnostics/password/reset">Forgot your password?</a></p>
+                <p class="registerModalLink">Not a registered user? <a href="https://bloomdiagnostics/">Sign up here</a>.</p>
+            </div>
+        </div>
+        <div class="loginDialog__container">
+            <div class="login__header">
+                <img src="bloom-diagnostics-example-files/login-user.svg" alt="User">
+                <h3 class="heading-xs">New Customer</h3>
+            </div>
+
+            <div class="login__form">
+                <a href="https://bloomdiagnostics/cart/checkout" class="btn input--full btn-orange--xs">
+                    <span class="btn__text">Proceed to checkout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modalOverlay modalRegister">
+    <div class="modalOverlay__close"></div>
+    <div class="loginDialog singleColumn">
+        <div class="loginDialog__container">
+            <div class="login__header">
+                <img src="bloom-diagnostics-example-files/login-user.svg" alt="User">
+                <h3 class="heading-xs">Sign Up</h3>
+            </div>
+
+            <form class="login__form" role="form" method="POST" id="registerModalForm" action="https://bloomdiagnostics/register">
+                <input type="hidden" name="_token" value="vGvEIsdIHYFpEA0EBqUOb5jMXn3ilP4IqZ6NYUTr">
+                <div class="formGroup">
+                    <input type="text" class="text input--full input--onWhite" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="formErrorMessage nameError"></div>
+
+                <div class="formGroup">
+                    <input type="text" class="text input--full input--onWhite" id="lastname" name="last_name" placeholder="Last Name">
+                </div>
+                <div class="formErrorMessage lastnameError"></div>
+
+                <div class="formGroup">
+                    <input type="email" class="text input--full input--onWhite" id="email" name="email" placeholder="Email *">
+                </div>
+                <div class="formErrorMessage emailError"></div>
+
+                <div class="formGroup">
+                    <input type="password" class="text input--full input--onWhite" id="password" name="password" placeholder="Password *">
+                </div>
+                <div class="formErrorMessage passwordError"></div>
+
+                <div class="formGroup">
+                    <input type="password" class="text input--full input--onWhite" id="password-confirm" name="password_confirmation" placeholder="Repeat Password *">
+                </div>
+                <div class="formErrorMessage passwordConfirmError"></div>
+
+                <button type="submit" class="btn input--full btn-orange--xs">
+                    <span class="btn__text">Sign Up</span>
+                </button>
+            </form>
+
+            <div class="login__help">
+                <p class="signInModalLink">Already registered? <a href="https://bloomdiagnostics/" target="_tab">Sign in here</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="wrapper  homepage " id="baccaContainer">
+
+        
+    
+    <section class="baccaIntro mappedBackground">
+
+        <div class="hero active">
+    <div class="scrollDown">
+        <svg version="1.1" class="arrow-big" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56px" height="29px" viewBox="0 0 56 29" enable-background="new 0 0 56 29" xml:space="preserve">
+                <path id="Rectangle-74-Copy" sketch:type="MSShapeGroup" fill="#FFFFFF" d="M27.999,28.869c0.258,0,0.517-0.1,0.714-0.299
+                L55.57,1.713c0.396-0.396,0.397-1.03,0.007-1.42c-0.394-0.394-1.026-0.388-1.421,0.006L28,26.456L1.843,0.299
+                c-0.396-0.396-1.03-0.396-1.42-0.006c-0.394,0.393-0.388,1.026,0.006,1.42L27.287,28.57c0.199,0.199,0.458,0.299,0.716,0.299H27.999
+                z"></path>
+            </svg>    </div>
+</div>
+        <div class="claim container">
+    <div class="containerWidth">
+        <img style="width: 50%" src="bloom-diagnostics-example-files/bloom-side2.png" alt="Ready to go">
+           <h1 class="heading-xl">Bloom Tests
+                <br>Fast. Digital. Data-Driven.</h1>
+        <p class="text-l">Made in Switzerland and Germany.<br>Built to state-of-the-art safety standards.</p>
+        <a href="#" class="btn btn-default">
+            <span class="btn__text">View our products</span>
+            <svg class="btn__icon btn__icon--eye" version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="15px" viewBox="0 0 23 15" enable-background="new 0 0 23 15" xml:space="preserve">
+                    <path fill="#FDFDFD" d="M11.5,15C5.441,15,0,9.906,0,7.5S5.441,0,11.5,0C17.775,0,23,5.445,23,7.5C23,9.843,17.439,15,11.5,15z
+                         M11.5,2C6.167,2,2.1,6.564,2,7.513C2.1,8.436,6.166,13,11.5,13c5.271,0,9.359-4.453,9.501-5.521C20.859,6.453,16.771,2,11.5,2z
+                         M11.5,4C13.434,4,15,5.567,15,7.5c0,1.934-1.566,3.5-3.5,3.5C9.567,11,8,9.434,8,7.5C8,5.567,9.567,4,11.5,4z"></path>
+                </svg>        </a>
+    </div>
+</div>
+        <div class="backgroundMapperLayerTop" style="opacity: 1;"></div>
+<div class="backgroundMapperLayerBottom"></div>
+    </section>
+
+    <section class="features">
+    <div class="feature feature--odd feature--1 clearfix">
+                <div class="feature__image skrollable skrollable-before" data-0-center-center="transform:translate3d(0, 0, 0);" data-600-center-center="transform:translate3d(0, 80px, 0);" style="transform: translate3d(0px, 80px, 0px);">
+                    <img src="bloom-diagnostics-example-files/feature-1new.png" alt="Ready to go">
+        </div>
+
+        <div class="feature__text" "="">
+            <div class="feature__textBox">
+                <h2> Bloom links real-time data processing and medical research</h2>
+                <p>The Bloom System enables anyone to measure blood markers in a few minutes directly at home or at one of our partner locations. </p>
+                <p>Relevant health information will be recorded in the Bloom App and evaluated in connection with the blood sample to produce a personalized health report, containing an individual analysis and actionable information. Understandable. Fast. Fully encrypted, so that nobody can access user data without their consent.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature feature--even feature--2 clearfix">
+                <div class="feature__image skrollable skrollable-before" data-0-center-center="transform:translate3d(0, 0, 0);" data-600-center-center="transform:translate3d(0, 80px, 0);" style="transform: translate3d(0px, 80px, 0px);">
+                    <img src="bloom-diagnostics-example-files/feature-2new.png" alt="Ready to go">
+        </div>
+
+        <div class="feature__text">
+            <div class="feature__textBox">
+                <h2>Find a Bloom partner</h2>
+                <p>
+                    Our growing partner network will soon offer a variety of Bloom Tests. No registration is necessary. Just find a provider near to you and get started.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature feature--odd feature--3 clearfix">
+                <div class="feature__image skrollable skrollable-before" data-0-center-center="transform:translate3d(0, 0, 0);" data-600-center-center="transform:translate3d(0, 80px, 0);" style="transform: translate3d(0px, 80px, 0px);">
+                    <img src="bloom-diagnostics-example-files/feature-3new.png" alt="Ready to go">
+        </div>
+
+        <div class="feature__text">
+            <div class="feature__textBox">
+                <h2>Perform a Bloom Test</h2>
+                <p>Download the Bloom App. Perform the Bloom Test - done with a finger prick. Insert the test strip into the Bloom Lab and get the result on your smartphone in just a few minutes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="feature feature--even feature--2 clearfix">
+        <div class="feature__image skrollable skrollable-before" data-0-center-center="transform:translate3d(0, 0, 0);" data-600-center-center="transform:translate3d(0, 80px, 0);" style="transform: translate3d(0px, 80px, 0px);">
+            <img src="bloom-diagnostics-example-files/bloom-side2.png" alt="Ready to go">
+</div>
+
+<div class="feature__text">
+    <div class="feature__textBox">
+        <h2>Receive a Bloom Report</h2>
+        <p>The Bloom App combines the test results with relevant health information and creates a personalized report, which contains recommendations and is easy to understand for everyone.</p>
+    </div>
+</div>
+</div>
+</section>
+    <section class="specs">
+    <div class="spec">
+        <div class="spec__icon">
+            <svg version="1.1" id="ico-plug" class="animatedIcon" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122px" height="122px" viewBox="0 0 122 122" enable-background="new 0 0 122 122" xml:space="preserve">
+                    <path fill="none" stroke="#DE693E" stroke-width="2" d="M1,61A60,60 0,1,1 121,61A60,60 0,1,1 1,61" style="stroke-dasharray: 378px, 380px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M64.191,36.107l8.465-8.465" style="stroke-dasharray: 12px, 14px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M33.784,66.513l10.604-10.604" style="stroke-dasharray: 15px, 17px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M45.8,78.528L70.459,53.87" style="stroke-dasharray: 35px, 37px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M57.821,90.549l24.66-24.658" style="stroke-dasharray: 35px, 37px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" d="M60.694,33.936c0.364-0.364,0.917-0.401,1.222-0.096l4.531,4.531
+                    c0.311,0.311,0.268,0.859-0.096,1.222L49.85,56.093c-1.457,1.458-3.65,1.628-4.907,0.371l-1.12-1.12
+                    c-1.253-1.253-1.089-3.448,0.371-4.907L60.694,33.936L60.694,33.936z" style="stroke-dasharray: 69px, 71px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="square" d="M57.818,36.812l5.657,5.657" style="stroke-dasharray: 9px, 11px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" d="M46.151,78.178c-3.32,3.32-8.702,3.319-12.021,0
+                    s-3.32-8.701,0-12.021" style="stroke-dasharray: 27px, 29px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" d="M82.213,66.156c3.32-3.318,3.32-8.7,0-12.02
+                    c-3.319-3.32-8.701-3.32-12.021,0" style="stroke-dasharray: 27px, 29px; stroke-dashoffset: 0px;"></path>
+                </svg>        </div>
+        <p class="text-m">Made in Switzerland and Germany</p>
+    </div>
+
+    <div class="spec">
+        <div class="spec__icon">
+            <svg version="1.1" id="ico-wind" class="animatedIcon" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122" height="122" viewBox="0 0 122 122" enable-background="new 0 0 122 122" xml:space="preserve">
+                    <path sketch:type="MSShapeGroup" fill="none" stroke="#DE693E" stroke-width="2" d="M1,61A60,60 0,1,1 121,61A60,60 0,1,1 1,61" style="stroke-dasharray: 378px, 380px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M71,51.5c0-5.2,4.3-9.5,9.5-9.5s9.5,4.3,9.5,9.5
+                    S85.7,61,80.5,61" style="stroke-dasharray: 45px, 47px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M66,77c0,3.9,3.1,7,7,7s7-3.1,7-7s-3.1-7-7-7" style="stroke-dasharray: 34px, 36px; stroke-dashoffset: 0px;"></path>
+                    <path sketch:type="MSShapeGroup" fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M42,52h20" style="stroke-dasharray: 20px, 22px; stroke-dashoffset: 0px;"></path>
+                    <path sketch:type="MSShapeGroup" fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M47,70h26" style="stroke-dasharray: 26px, 28px; stroke-dashoffset: 0px;"></path>
+                    <path sketch:type="MSShapeGroup" fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M32,61h49" style="stroke-dasharray: 49px, 51px; stroke-dashoffset: 0px;"></path>
+                </svg>        </div>
+        <p class="text-m">Developed with state-of-the-art safety and data encryption standards</p>
+    </div>
+
+    <div class="spec">
+        <div class="spec__icon">
+            <svg version="1.1" id="ico-angle" class="animatedIcon" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122 122" width="122" height="122" enable-background="new 0 0 122 122" xml:space="preserve">
+                    <path sketch:type="MSShapeGroup" fill="none" stroke="#DE693E" stroke-width="2" d="M1,61A60,60 0,1,1 121,61A60,60 0,1,1 1,61" style="stroke-dasharray: 378px, 380px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M34.9,71H86" style="stroke-dasharray: 52px, 54px; stroke-dashoffset: 0px;"></path>
+                    <path sketch:type="MSShapeGroup" fill="none" stroke="#DE693E" stroke-width="2" d="M62,71.1c0-3.6-0.7-7.2-2.2-10.7s-3.6-6.5-6.2-9
+                    " style="stroke-dasharray: 23px, 25px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M34.9,71l35.5-36.8" style="stroke-dasharray: 52px, 54px; stroke-dashoffset: 0px;"></path>
+                </svg>        </div>
+        <p class="text-m">Flexible options for the future: New biomarkers will be added continuously</p>
+    </div>
+
+    <div class="spec">
+        <div class="spec__icon">
+            <svg version="1.1" id="ico-light" class="animatedIcon" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122 122" width="122" height="122" enable-background="new 0 0 122 122" xml:space="preserve">
+                    <path sketch:type="MSShapeGroup" fill="none" stroke="#DE693E" stroke-width="2" d="M1,61A60,60 0,1,1 121,61A60,60 0,1,1 1,61" style="stroke-dasharray: 378px, 380px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M47.8,79.8 c10.9,7.6,35.2-24,29.8-42.6" style="stroke-dasharray: 60px, 62px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" d="M44.4,84.8l31.5-45.1l0.6-0.8" style="stroke-dasharray: 57px, 59px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="square" d="M64.1,57.8l12.1-4.5" style="stroke-dasharray: 13px, 15px; stroke-dashoffset: 0px;"></path>
+                    <path fill="none" stroke="#DE693E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M47.8,79.8 c-10.9-7.6,10.7-41.2,29.8-42.6" style="stroke-dasharray: 60px, 62px; stroke-dashoffset: 0px;"></path>
+                </svg>        </div>
+        <p class="text-m">Get the result on your smartphone in just a few minutes</p>
+    </div>
+</section>
+    <section class="material">
+    <div class="heading-xl">The Bloom App delivers personalized <br>analysis on smartphones
+        <br>
+
+
+        <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.bloomdiagnostics.android.main"><img src="bloom-diagnostics-example-files/play.svg" alt="Google Play Badge" class="w-full max-w-badge"></a>
+        <a target="_blank" rel="noopener" href="https://apps.apple.com/at/app/bloom-diagnostics/id1514440074"><img src="bloom-diagnostics-example-files/apple.svg" alt="App Store Badge" class="w-full max-w-badge"></a>
+    </div>
+
+</section>
+    <section class="products clearfix">
+    <div class="containerWidth clearfix">
+        <h2 class="heading-xl">Order now</h2>
+
+        <div class="productsAligner">
+        	<div class="product__container">
+        <div class="product">
+            <div class="product--overlay">
+                <div class="product__ui">
+                    <div class="product__info">Bloom Lab · <span class="product__currency">€</span> 65</div>
+                    <div class="product__buttons">
+                        <div class="product__button button--left clearfix">
+                            <a href="https://bloomdiagnostics/products/live">
+                                <span class="button__text">View More</span><img src="bloom-diagnostics-example-files/eye.svg" alt="View the Live Stand">
+                            </a>
+                        </div>
+                        <div class="product__button button--right clearfix">
+                            <a href="https://bloomdiagnostics/cart/add/live" class="addToRapidCart" data-product="1">
+                                <span class="button__text">
+                                                                             
+                                            Out of Stock
+                                                                                                            </span><img src="bloom-diagnostics-example-files/cart.svg" alt="Add Live Stand to Cart">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="product--link" href="https://bloomdiagnostics/products/live">
+                <img class="product__image" src="bloom-diagnostics-example-files/bloom-side2.png" alt="Bacca Live Stand">
+            </a>
+        </div>
+    </div>
+    <div class="product__container">
+        <div class="product">
+            <div class="product--overlay">
+                <div class="product__ui">
+                    <div class="product__info">Iron Tracking Pack · <span class="product__currency">€</span> 55</div>
+                    <div class="product__buttons">
+                        <div class="product__button button--left clearfix">
+                            <a href="https://bloomdiagnostics/products/studio">
+                                <span class="button__text">View More</span><img src="bloom-diagnostics-example-files/eye.svg" alt="View the Studio Stand">
+                            </a>
+                        </div>
+                        <div class="product__button button--right clearfix">
+                            <a href="https://bloomdiagnostics/cart/add/studio" class="addToRapidCart" data-product="2">
+                                <span class="button__text">
+                                                                             
+                                            Out of Stock
+                                                                                                            </span><img src="bloom-diagnostics-example-files/cart.svg" alt="Add Studio Stand to Cart">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="product--link" href="https://bloomdiagnostics/products/studio">
+                <img class="product__image" src="bloom-diagnostics-example-files/feature-3new.png" alt="Bacca Studio Stand">
+            </a>
+        </div>
+    </div>
+    <div class="product__container">
+        <div class="product">
+            <div class="product--overlay">
+                <div class="product__ui">
+                    <div class="product__info">Ovarian Reserve Test · <span class="product__currency">€</span> 55</div>
+                    <div class="product__buttons">
+                        <div class="product__button button--left clearfix">
+                            <a href="https://bloomdiagnostics/products/desktop">
+                                <span class="button__text">View More</span><img src="bloom-diagnostics-example-files/eye.svg" alt="View the Desktop Stand">
+                            </a>
+                        </div>
+                        <div class="product__button button--right clearfix">
+                            <a href="https://bloomdiagnostics/cart/add/desktop" class="addToRapidCart" data-product="3">
+                                <span class="button__text">
+                                                                             
+                                            Out of Stock
+                                                                                                            </span><img src="bloom-diagnostics-example-files/cart.svg" alt="Add Desktop Stand to Cart">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="product--link" href="https://bloomdiagnostics/products/desktop">
+                <img class="product__image" src="bloom-diagnostics-example-files/feature-2new.png" alt="Bacca Desktop Stand">
+            </a>
+        </div>
+    </div>
+        </div>
+
+        <form action="/cart/add" method="post" id="rapidCart">
+    <input type="hidden" name="_token" value="vGvEIsdIHYFpEA0EBqUOb5jMXn3ilP4IqZ6NYUTr">
+    <input type="hidden" id="productId" name="productId">
+    <input type="hidden" id="productQty" class="quantity__counter" name="productQty" value="1">
+</form>    </div>
+</section>
+    
+
+    </div>
+
+<footer class="footer">
+            <div class="containerWidth clearfix">
+                <div class="footer__newsletter">
+                    <h4 class="text-l">Sign up to our newsletter</h4>
+                    <p class="text-s">&amp; get exclusive deals</p>
+                    <form action="https://bloomdiagnostics/subscribe" id="subscriptionForm">
+                        <input class="input--black ta-c" type="email" name="email" placeholder="Your email &amp; hit enter">
+                        <input type="submit">
+                    </form>
+                    <p class="text-xs footerLink">By signing up I agree to the <a href="https://bloomdiagnostics/legal/privacy-policy">Privacy Policy</a>.</p>
+                </div>
+                <div class="footer__follow">
+                    <h4 class="text-l">Follow Us</h4>
+                    <ul class="follow__list">
+                                                <li><a href="https://www.facebook.com/bloomdiagnostics/" target="_tab"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://www.instagram.com/bloomdiagnostics/" target="_tab"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__customerService">
+                    <h4 class="text-l">Customer Service</h4>
+                    <ul class="text-s customerService__list">
+                        <li><a href="mailto:hola@bloomdiagnostics?Subject=Enquiry">Contact us</a></li>
+                        <li><a class="footerLink" href="https://bloomdiagnostics/legal/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__copyRight">
+                </div>
+            </div>
+        </footer>
+
+        <script src="bloom-diagnostics-example-files/sdk_002.js" async="" crossorigin="anonymous"></script><script async="" src="bloom-diagnostics-example-files/analytics.js"></script><script id="facebook-jssdk" src="bloom-diagnostics-example-files/sdk.js"></script><script src="bloom-diagnostics-example-files/webfontloader.js"></script><script src="bloom-diagnostics-example-files/3d1561dd78.js"></script>
+        <script src="bloom-diagnostics-example-files/jquery-1.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="bloom-diagnostics-example-files/aky1xya.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script src="bloom-diagnostics-example-files/vivus.js"></script>
+        <script src="bloom-diagnostics-example-files/skrollr.js"></script>
+        <script src="bloom-diagnostics-example-files/imagesloaded.js"></script>
+        <script src="bloom-diagnostics-example-files/jquery_002.js"></script>
+        <script src="bloom-diagnostics-example-files/jquery.js"></script>
+        <script src="bloom-diagnostics-example-files/a" type="text/javascript"></script>
+        <script type="text/javascript">Stripe.setPublishableKey('pk_live_FwbwxPt4FWiIRu3BdQysarTu');</script>
+        <script src="bloom-diagnostics-example-files/main-fe2da33071.js"></script>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '390367741333375',
+              xfbml      : true,
+              version    : 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <script>
+          var newwindow;
+          function popit(url) {
+              newwindow=window.open(url,'name','height=500,width=500');
+              if (window.focus) {newwindow.focus()}
+          }
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-74607259-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+    
+<iframe name="stripeXDM_default888346_provider" id="stripeXDM_default888346_provider" aria-hidden="true" style="position: absolute; top: -2000px; left: 0px;" src="bloom-diagnostics-example-files/channel.html" frameborder="0"></iframe><iframe src="bloom-diagnostics-example-files/outer.html" style="width: 1px !important; height: 1px !important; position: fixed !important; visibility: hidden !important; pointer-events: none !important;" allowtransparency="true" scrolling="no" tabindex="-1" aria-hidden="true" frameborder="0"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>
